@@ -20,11 +20,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "server": "electron .",
+    "dev": "concurrently \"npm start\" \"npm run server\"",
     "build": "react-scripts build && electron-builder",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dev": "concurrently \"npm start\" \"npm run server\"",
-    "server": "electron ."
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
